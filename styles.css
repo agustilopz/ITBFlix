@@ -1,0 +1,145 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+
+header{
+    background-color: rgb(242, 143, 143);
+    padding: 10px;
+}
+
+header img {
+object-fit: cover;
+}
+
+nav ul{
+    display: flex;
+    gap: 5px;
+}
+
+nav ul li {
+    flex: 1;
+    list-style-type: none;
+}
+
+
+.peliculas-principal, .series-principal {
+display:flex;
+gap: 5px;
+flex-wrap: wrap;
+}
+
+.series {
+    margin: 0px 10px 0px 20px;
+}
+
+.actores {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.actores-block {
+    background-color: rgb(114, 113, 113);
+
+
+}
+
+.actor {
+    flex: 1;
+}
+
+.lo-mas-visto {
+    display: flex;
+    gap: 5px;
+
+}
+
+.miniatura-pelicula, .miniatura-serie {
+    flex: 1;
+    /*border: solid red; */
+}
+
+
+
+img {
+    border-radius: 10px;
+
+
+}
+
+.block-2 {
+    display:flex;
+}
+
+.miniatura-serie {
+    flex: 1;
+}
+
+#festivales {
+    background-color: rgb(242, 143, 143);
+    width: 30%;
+}
+
+#lomasvisto {
+    background-color: rgb(114, 113, 113);
+
+}
+
+h5 {
+   /* border: solid red; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+h6 {
+    /*border: solid red; */
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+}
+
+lo-mas-visto article {
+    
+}
+
+.lo-mas-visto article {
+    position: relative;
+    flex: 1;
+    border-radius: 8px;
+}
+
+h6 {
+    font-weight: 100;
+}
+  
+
+/* Estilos para los números */
+.lo-mas-visto article span {
+    position: absolute;
+    top: 10px; /* Ajusta para cambiar la posición vertical */
+    left: 10px; /* Ajusta para cambiar la posición horizontal */
+    font-size: 25px; /* Tamaño del número */
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para que el número destaque */
+    padding: 5px 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    z-index: 2; /* Asegura que el número esté sobre la imagen */
+
+}
+
+
+/* Estilo de la imagen */
+.miniatura-pelicula, .miniatura-serie {
+    width: 100%; /* o el tamaño que desees */
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto al pasar el cursor */
+  .miniatura-pelicula:hover, .miniatura-serie:hover {
+    transform: scale(1.08); /* Aumenta el tamaño de la imagen un 10% */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+
+  }
+  
