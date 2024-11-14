@@ -54,6 +54,18 @@ flex-wrap: wrap;
     gap: 5px;
 
 }
+#lomasvisto {
+    padding-top: 5px;
+    padding-left:15px;
+    padding-bottom:15px;
+}
+
+
+
+.poster-masvisto:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen un 10% */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+}
 
 .miniatura-pelicula, .miniatura-serie {
     flex: 1;
