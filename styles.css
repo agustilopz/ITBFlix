@@ -2,10 +2,18 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    background-color: #12192B;
+
+}
+
 
 header{
-    background-color: rgb(242, 143, 143);
+    background-color: #20293A;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+   margin: 0px 0px 0px 0px;
 }
 
 header img {
@@ -14,12 +22,14 @@ object-fit: cover;
 
 nav ul{
     display: flex;
-    gap: 5px;
+    gap: 15px;
+
 }
 
 nav ul li {
     flex: 1;
     list-style-type: none;
+
 }
 
 
@@ -27,6 +37,7 @@ nav ul li {
 display:flex;
 gap: 5px;
 flex-wrap: wrap;
+justify-content: flex-start;
 }
 
 .series {
@@ -40,7 +51,7 @@ flex-wrap: wrap;
 }
 
 .actores-block {
-    background-color: rgb(114, 113, 113);
+    background-color: #20293A;
 
 
 }
@@ -69,7 +80,17 @@ flex-wrap: wrap;
 
 .miniatura-pelicula, .miniatura-serie {
     flex: 1;
+    width:150px;
     /*border: solid red; */
+    align-items: flex-start;
+}
+
+.miniatura-pelicula h5 {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que exceda el ancho */
+    text-overflow: ellipsis; /* Agrega los puntos suspensivos si el texto es largo */
+    margin: 0; /* Opcional, para evitar margen extra */
 }
 
 
@@ -89,12 +110,12 @@ img {
 }
 
 #festivales {
-    background-color: rgb(242, 143, 143);
+    background-color: #20293A;
     width: 30%;
 }
 
 #lomasvisto {
-    background-color: rgb(114, 113, 113);
+    background-color: #20293A;
 
 }
 
@@ -102,12 +123,14 @@ h5 {
    /* border: solid red; */
     margin-top: 0px;
     margin-bottom: 0px;
+    color:white;
 
 }
 h6 {
     /*border: solid red; */
     margin-top: 0px;
     margin-bottom: 5px;
+    color:white;
 
 }
 
@@ -155,3 +178,25 @@ h6 {
 
   }
   
+  .miniatura-pelicula, .miniatura-serie {
+    flex: 1;
+    width:150px;
+
+    /*border: solid red; */
+}
+
+h3, h1,h2,p,h4 {
+    color:white;
+}
+
+a {
+    color:white;
+}
+
+.detallpadrino {
+}
+
+form {
+    color:white;
+    padding: 10px;
+}
