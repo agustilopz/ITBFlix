@@ -15,7 +15,7 @@ header{
 }
 
 a, h3, h1,h2,p,h4 {
-    color:white;
+    color: #e6e7ec;
 }
 
 /* Menú de la dreta */
@@ -416,4 +416,99 @@ footer {
 
 .main-content-home {
     padding-left:20px;
+    padding-bottom: 20px;
 }
+
+/* Aplica estilo al contenedor principal */
+.studios-main {
+    display: flex; /* Coloca los artículos en fila */
+    flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
+    gap: 20px; /* Espaciado entre los artículos */
+    justify-content: flex-start; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para cada artículo */
+.studios-main article {
+    width: 300px; /* Ancho fijo para cada rectángulo */
+    height: 150px; /* Altura fija para cada rectángulo */
+    background-color: #1F2937; /* Fondo para los rectángulos */
+    display: flex; /* Hace que el contenido se centre */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border: 1px solid #353F4F; /* Borde opcional */
+    border-radius: 15px; /* Esquinas redondeadas opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+/* Estilo para las imágenes */
+.studios-main img {
+    max-width: 60%; /* Escala la imagen para que se ajuste horizontalmente */
+    max-height: 60%; /* Escala la imagen para que se ajuste verticalmente */
+    object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+}
+
+.studios-main article:hover {
+    cursor: pointer;
+    transform: scale(1.06); /* Aumenta el tamaño de la imagen un 10% */
+    background-color: #353F4F; /* Cambia el clor al hacer hover */
+
+
+}
+
+.movie-section-text a:hover {
+    color:#ffffff ;
+}
+
+
+.miniatura-pelicula h6, .miniatura-serie h6 {
+    padding-top:5px;
+
+}
+
+
+
+/* Detall pelicula Cast  */
+
+.cast {
+    margin-top: 20px;
+}
+
+.cast h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cast-list {
+    display: flex;
+    gap: 30px;
+}
+
+.cast-member {
+    text-align: center;
+}
+
+.cast-member img {
+    width: 80px; /* Ancho del contenedor */
+    height: 80px; /* Alto del contenedor */
+    border-radius: 50%; /* Convierte el contenedor en un círculo */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo sin deformarla */
+}
+
+.cast-member p {
+    margin: 5px 0;
+}
+
+.role {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.poster-pelicula, .poster-serie {
+    width:150px;
+}
+
+.country img {
+    width:20px;
+    border-radius: 0;
+}
+
