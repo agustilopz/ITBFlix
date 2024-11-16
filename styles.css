@@ -357,6 +357,7 @@ footer {
 .details {
     padding-left:25px;
     padding-top:0;
+    padding-right:20px;
 }
 
 
@@ -516,3 +517,10 @@ footer {
     border-radius: 0;
 }
 
+nav ul li a {
+    font-weight: 800;
+}
+
+.empty-space {
+    width:350px;
+}
