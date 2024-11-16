@@ -7,12 +7,17 @@ body {
     margin:0;
 }
 
+
+
+
+
 header{
     background-color: #20293A;
     padding: 10px;
     display: flex;
     justify-content: space-between;
 }
+
 
 a, h3, h1,h2,p,h4 {
     color: #e6e7ec;
@@ -23,6 +28,7 @@ a, h3, h1,h2,p,h4 {
     display: flex;
     gap: 25px;
     margin-right: 10px;
+    margin-bottom:0px;
 }
 
 /* Items menú */
@@ -182,7 +188,7 @@ img {
 /* Subtítol miniatures pelis*/
 .thumb-subtitle {
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 20px; 
     color:white;
     font-weight: 100;
 
@@ -524,3 +530,4 @@ nav ul li a {
 .empty-space {
     width:350px;
 }
+
