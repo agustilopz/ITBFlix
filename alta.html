@@ -7,23 +7,57 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form>
-    <label for="fname">Nombre</label><br>
-    <input type="text" id="fname" name="fname" placeholder="John"><br>
-    <label>Apellido</label><br>
-    <input type="text" id="lname" name="lname" placeholder="Doe"><br>
-
-    <label>Correo electrónico</label><br>
-    <input type="input" id="email" name="email" placeholder="usuario@email.com" required><br>
-
-    <label>Nombre de usuario</label><br>
-    <input type="text" id="username" name="username" placeholder="usuario123" required><br>
+  
+  <header>
+    <div>
+        <img width="150px" src="src/itbflix.png">
+    </div>
     
-    <label>Contarseña</label><br>
-    <input type="password" id="password" name="password"><br>
-    <label>Repite contraseña</label><br>
-    <input type="password" id="password" name="password"><br>
+    <div>
+        <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="films.html">Movies</a></li>
+            <li><a href="index.html #series">TV Series</a></li>
+            <li><a href="index.html #lomasvisto">Most viewed</a></li>
+            <li><a href="alta.html">Sign up</a></li>
+            <!--<li>Contacto</li>-->
+        </ul>
+        </nav>
+    </div>
+    </header>
 
+<section class="sign-up">
+  <article class="form-title">
+    <h3>Create your account</h3>
+  </article>
+  <article class="form-content">
+    <form>
+      <article class="form-row">
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First and last name"><br>
+      </article>
+
+      <article class="form-row">
+        <label>Email address</label><br>
+        <input type="input" id="email" name="email" placeholder="user@email.com" required><br>
+      </article>
+
+      <article class="form-row">
+        <label>Username</label><br>
+        <input type="text" id="username" name="username" placeholder="" required><br>
+      </article>
+
+      <article class="form-row">
+        <label>Password</label><br>
+        <input type="password" id="password" name="password" placeholder="At least 8 characters"><br>
+      </article>
+
+      <article class="form-row">
+        <label>Re-enter password</label><br>
+        <input type="password" id="password" name="password"><br>
+      </article>
+      <!--
     <label>Fecha de nacimiento</label><br>
     <input type="date" name="date" id="date" required><br>
 
@@ -36,13 +70,20 @@
 
 
     </select><br>
+-->
+      <article class="form-row">
+        <input type="checkbox" name="checkbox" id="checkbox" required>
 
-    <input type="checkbox" name="checkbox" id="checkbox" required>
-    <label>Acepta los términos y condicones</label><br>
+        <label>I accept the Terms of Service and Privacy Policy.</label><br>
+      </article>
 
-    <input type="submit" value="Submit">
+      <article class="form-row">
+        <input type="submit" value="Sign up">
+      </article>
 
-  </form>  
+    </form>
+  </article>
+</section> 
 
 
 

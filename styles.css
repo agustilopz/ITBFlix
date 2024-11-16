@@ -4,45 +4,85 @@
 
 body {
     background-color: #12192B;
-
+    margin:0;
 }
-
 
 header{
     background-color: #20293A;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-   margin: 0px 0px 0px 0px;
 }
 
-header img {
-object-fit: cover;
+a, h3, h1,h2,p,h4 {
+    color:white;
 }
 
-nav ul{
+/* Menú de la dreta */
+.menu{
     display: flex;
-    gap: 15px;
-
+    gap: 25px;
+    margin-right: 10px;
 }
 
-nav ul li {
-    flex: 1;
+/* Items menú */
+.menu li {
+    flex: auto;
     list-style-type: none;
+    /*border: solid red; */
 
 }
 
+.menu li a{
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    padding: 5px 8px 5px 8px;
+   /* border: solid rgb(0, 134, 251); */
 
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+
+
+.menu li a:hover {
+    border-radius: 5px; /* Opcional: hace que los bordes sean redondeados */
+    background-color: #545f72; /* Opcional: un fondo gris claro al pasar el cursor */
+}
+
+/* Miniatures pelicules */
 .peliculas-principal, .series-principal {
 display:flex;
 gap: 5px;
 flex-wrap: wrap;
-justify-content: flex-start;
+justify-content: center;
 }
 
-.series {
-    margin: 0px 10px 0px 20px;
+
+.peliculas-principal, .series-principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Distribuye los elementos dinámicamente */
+    gap: 10px; /* Espacio entre elementos */
+    justify-content: space-around; /* Hace que la primera fila ocupe todo el espacio */
+   /* border: solid red;
+} 
+
+
+
+.miniatura-pelicula, .miniatura-serie {
+    width:150px;
+    flex: 0 0 1; 
+    /*border: solid red; */
+
 }
+
+img {
+    border-radius: 10px;
+}
+
+
 
 .actores {
     display: flex;
@@ -50,103 +90,35 @@ justify-content: flex-start;
     text-align: center;
 }
 
-.actores-block {
-    background-color: #20293A;
 
-
-}
 
 .actor {
     flex: 1;
 }
 
+
+
+/* Secció lo más visto   */
 .lo-mas-visto {
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
+    justify-content:center;
+
 
 }
 #lomasvisto {
     padding-top: 5px;
     padding-left:15px;
     padding-bottom:15px;
-}
-
-
-
-.poster-masvisto:hover {
-    transform: scale(1.05); /* Aumenta el tamaño de la imagen un 10% */
-    cursor: pointer; /* Cambia el cursor a "mano" */
-}
-
-.miniatura-pelicula, .miniatura-serie {
-    flex: 1;
-    width:150px;
-    /*border: solid red; */
-    align-items: flex-start;
-}
-
-.miniatura-pelicula h5 {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta el texto que exceda el ancho */
-    text-overflow: ellipsis; /* Agrega los puntos suspensivos si el texto es largo */
-    margin: 0; /* Opcional, para evitar margen extra */
-}
-
-
-
-img {
-    border-radius: 10px;
-
-
-}
-
-.block-2 {
-    display:flex;
-}
-
-.miniatura-serie {
-    flex: 1;
-}
-
-#festivales {
     background-color: #20293A;
-    width: 30%;
-}
-
-#lomasvisto {
-    background-color: #20293A;
-
-}
-
-h5 {
-   /* border: solid red; */
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color:white;
-
-}
-h6 {
-    /*border: solid red; */
-    margin-top: 0px;
-    margin-bottom: 5px;
-    color:white;
-
-}
-
-lo-mas-visto article {
-    
 }
 
 .lo-mas-visto article {
     position: relative;
-    flex: 1;
-    border-radius: 8px;
+    flex: 0 1 1;
 }
 
-h6 {
-    font-weight: 100;
-}
   
 
 /* Estilos para los números */
@@ -165,38 +137,283 @@ h6 {
 }
 
 
-/* Estilo de la imagen */
-.miniatura-pelicula, .miniatura-serie {
-    width: 100%; /* o el tamaño que desees */
+
+/* Efecto al pasar el cursor por poster más visto */
+.poster-masvisto:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen un */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+}
+
+
+/*
+.miniatura-serie {
+    flex: 1;
+}
+*/
+
+/*
+.block-2 {
+    display:flex;
+}
+#festivales {
+    background-color: #20293A;
+    width: 30%;
+}
+
+*/
+
+/* Títol de miniatures */
+.thumb-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color:white;
+    padding-top:8px;
+}
+
+.miniatura-pelicula h5 {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que exceda el ancho */
+    text-overflow: ellipsis; /* Agrega los puntos suspensivos si el texto es largo */
+    margin: 0; /* Opcional, para evitar margen extra */
+}
+
+
+/* Subtítol miniatures pelis*/
+.thumb-subtitle {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color:white;
+    font-weight: 100;
+
+
+}
+
+
+
+
+/* Efecte hover al passar per sobre els posters*/
+
+  .poster-pelicula, .poster-serie {
+    width: 150px; /* o el tamaño que desees */
     transition: transform 0.3s ease; /* Transición suave */
   }
-  
-  /* Efecto al pasar el cursor */
-  .miniatura-pelicula:hover, .miniatura-serie:hover {
-    transform: scale(1.08); /* Aumenta el tamaño de la imagen un 10% */
+  .poster-pelicula:hover, .poster-serie:hover {
+    transform: scale(1.06); /* Aumenta el tamaño de la imagen un 10% */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+  }
+
+  .actor img {
+    transition: transform 0.3s ease; /* Transición suave */
+   
+  }
+
+  .actor img:hover {
+    transform: scale(1.06); /* Aumenta el tamaño de la imagen un 10% */
     cursor: pointer; /* Cambia el cursor a "mano" */
 
+
   }
-  
-  .miniatura-pelicula, .miniatura-serie {
-    flex: 1;
-    width:150px;
 
-    /*border: solid red; */
-}
-
-h3, h1,h2,p,h4 {
-    color:white;
-}
-
-a {
-    color:white;
-}
-
-.detallpadrino {
-}
-
+/* Darse de alta */
 form {
     color:white;
     padding: 10px;
+   
+}
+
+.alta {
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+/*
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+    */
+
+.form-row {
+    flex: 1;
+   
+}
+
+/* General styles for the form container */
+.sign-up {
+    width: 400px; /* Ajusta el ancho del formulario */
+    margin: 100px auto; /* Centra el formulario en la página */
+    padding: 20px;
+    background-color: #394b59; /* Fondo gris oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  /* Título del formulario */
+  .form-title h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  /* Cada fila del formulario */
+  .form-row {
+    margin-bottom: 15px; /* Espaciado entre filas */
+  }
+  
+  /* Estilo de las etiquetas */
+  .form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  /* Estilo de los inputs */
+  .form-row input[type="text"],
+  .form-row input[type="email"],
+  .form-row input[type="password"],
+  .form-row input[type="input"] {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    padding: 10px;
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #e5eff5; /* Fondo gris claro */
+    color: black; /* Texto oscuro */
+    box-sizing: border-box; /* Asegura que el padding no expanda el input */
+  }
+  
+  /* Checkbox y su texto */
+  .form-row input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .form-row label[for="checkbox"] {
+    display: inline-block;
+    font-size: 0.85em;
+  }
+  
+  /* Botón de envío */
+  .form-row input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4F46E5; /* Color Sign Up */
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-row input[type="submit"]:hover {
+    background-color: #1aa01a; /* Oscurece el botón al pasar el cursor */
+  }
+  
+
+
+
+
+
+
+
+
+  
+
+
+/* Disposicio pagina detall pelicula */
+.header-detail {
+display: flex;
+}
+
+.details h1 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+/* Footer  */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #545f72;
+  margin:0;
+  padding: 10px;
+}
+.rss {
+    padding-top: 10px;
+   
+}
+
+
+.movie-details {
+
+    padding: 25px;
+}
+
+
+.details {
+    padding-left:25px;
+    padding-top:0;
+}
+
+
+.main-movie-details {
+    background: #12192B url('src/TheGodfatherBackdropGrade.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.movie-details {
+    background: rgba(18, 25, 43, 0.9); /* Para oscurecer el fondo */
+
+}
+
+/*
+
+.main-header {
+    background: #12192B url('src/TheGodfatherBackdrop.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+
+
+}
+
+.header-detail {
+    background: rgba(18, 25, 43, 0.9); 
+}
+
+*/
+
+.rss img {
+    transition: opacity 0.3s ease;
+    padding: 3px;
+}
+
+.twitter, .facebook, .instagram, .youtube {
+    transition: opacity 0.3s ease;
+}
+
+.twitter:hover {
+    content: url('src/twitter-logo2.png'); /* Cambia la imagen al pasar el cursor */
+    cursor: pointer;
+}
+.facebook:hover {
+    content: url('src/facebook-logo2.png'); /* Cambia la imagen al pasar el cursor */
+    cursor: pointer;
+}
+
+.instagram:hover {
+    content: url('src/instagram-logo2.png'); /* Cambia la imagen al pasar el cursor */
+    cursor: pointer;
+}
+.youtube:hover {
+    content: url('src/youtube-logo2.png'); /* Cambia la imagen al pasar el cursor */
+    cursor: pointer;
+}
+
+.main-content-home {
+    padding-left:20px;
 }

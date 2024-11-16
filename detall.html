@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,47 +8,74 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <img width="200" src="src/itbflix.png">
-        <nav>
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#pelis">Películas</a></li>
-            <li><a href="#series">Series</a></li>
-            <li><a href="#actores">Actores</a></li>
-            <li><a href="#festivales">Festivales</a></li>
-            <li><a href="#lomasvisto">Lo más visto</a></li>
-            <li>Darse de alta</li>
-            <li>Contacto</li>
-        </ul>
-        </nav>
-    </header>
-    <main>
+        <div>
+            <img width="150px" src="src/itbflix.png">
+        </div>
         
-        <section>
-            <img width="100%" src="src/TheGodfatherBackdrop.jpg">
-            <h2 id="pelis">El Padrino (1972)</h2>
-                    
-                <article>
-                    <!--<h5><a href="https://www.google.com/">El Padrino (1972)</a></h5>-->
-                    <figure>
-                    <img class="detallpadrino" width="200px"src="https://m.media-amazon.com/images/I/618zPFzLm9L._AC_UF894,1000_QL80_.jpg" alt="Imagen de una hoja">
-                    <iframe width="560" height="280" src="https://www.youtube.com/embed/v72XprPxy3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+            <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="films.html">Movies</a></li>
+                <li><a href="index.html #series">TV Series</a></li>
+                <li><a href="index.html #lomasvisto">Most viewed</a></li>
+                <li><a href="alta.html">Sign up</a></li>
+                <!--<li>Contacto</li>-->
+            </ul>
+            </nav>
+        </div>
+        </header>
 
-                    
+    <main class="main-movie-details">
+        <section class="movie-details">
+            <!--
+            <img class="banner" width="100%" src="src/TheGodfatherBackdrop.jpg">
+            -->
+          <article class="main-header">  
+            <div class="header-detail">
+                <article class="poster">
+                    <img class="detallposter" width="200px" src="src/TheGodfatherPoster.jpg" alt="The Godfather Poster">
+                </article>
+                <article class="details">
+                    <article class="detail-text">
+                        <h1>The Godfather (1972)</h1>
+                        <p>(El Padrino)</p>
+                        <p>2h 49m · Drama, Crime</p>
+                        <p><strong>Directed by</strong> Francis Ford Coppola</p>
+                        <p><span class="country-flag">🇺🇸</span> United States</p>
+                    </article>
+
                     <h4>Sinopsis</h4>
-                    <p>Don Vito Corleone, conocido dentro de los círculos del hampa como 'El Padrino', es el patriarca de una de las cinco familias que ejercen el mando de la Cosa Nostra en Nueva York en los años cuarenta. Don Corleone tiene cuatro hijos: una chica, Connie, y tres varones; Sonny, Michael y Fredo. Cuando el Padrino reclina intervenir en el negocio de estupefacientes, empieza una cruenta lucha de violentos episodios entre las distintas familias del crimen organizado.</p>
-                    <h4>Director</h4>
-                    <p>Francis Ford Coppola</p>
-                    <h4>Actores</h4>
-                    <p>Marlon Brando, Al Pacino, James Caan, Diane Keaton, Robert Duvall, Sterling Hayden, John Cazale.</p>
-                </figure>   
-                </article>  
-        </section>        
-    </main>            
+                    <p>Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime
+                        family.
+                        When organized crime family patriarch, Vito Corleone barely survives an attempt on his life,
+                        his youngest son, Michael steps in to take care of the would-be-killers,
+                        launching a campaign of bloody revenge. </p>
+            </div>
+            </article>
+
+            <p><strong>Director:</strong> Francis Ford Coppola</p>
+            <p><strong>Screenplay:</strong> Mario Puzo, Francis Ford Coppola</p>
+            <p><strong>Producer:</strong> Albert S. Ruddy</p>
+            <h4>Actores</h4>
+            <p>Marlon Brando, Al Pacino, James Caan, Diane Keaton, Robert Duvall, Sterling Hayden, John Cazale.</p>
+
+
+
+            <!--<iframe width="560" height="280" src="https://www.youtube.com/embed/v72XprPxy3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    -->
+
+
+
+            </article>
+        </section>
+    </main>
 
 
 
 </body>
+
 </html>
