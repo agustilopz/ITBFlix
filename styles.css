@@ -507,6 +507,10 @@ footer {
     width:150px;
 }
 
+.poster-masvisto img {
+    width:100px;
+}
+
 .country img {
     width:20px;
     border-radius: 0;
