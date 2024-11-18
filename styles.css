@@ -193,6 +193,10 @@ form {
     flex: 1;
 }
 
+#terms {
+    display:flex;
+}
+
 /* Darse de alta */
 .sign-up {
     width: 400px; /* Ajusta el ancho del formulario */
@@ -250,7 +254,7 @@ form {
   .form-row input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4F46E5; /* Color Sign Up */
+    background-color: #20293A; /* Color Sign Up */
     border: none;
     color: white;
     font-size: 1em;
@@ -360,14 +364,14 @@ footer {
 .studios-main {
     display: flex; /* Coloca los artículos en fila */
     flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
-    gap: 20px; /* Espaciado entre los artículos */
+    gap: 30px; /* Espaciado entre los artículos */
     justify-content: flex-start; /* Centra el contenido horizontalmente */
 }
 
 /* Estilo para cada artículo */
 .studios-main article {
-    width: 300px; /* Ancho fijo para cada rectángulo */
-    height: 150px; /* Altura fija para cada rectángulo */
+    width: 270px; /* Ancho fijo para cada rectángulo */
+    height: 145px; /* Altura fija para cada rectángulo */
     background-color: #1F2937; /* Fondo para los rectángulos */
     display: flex; /* Hace que el contenido se centre */
     justify-content: center; /* Centra horizontalmente */
@@ -453,9 +457,17 @@ nav ul li a {
     font-weight: 800;
 }
 
-.empty-space {
+.aside {
     width:350px;
+    background-color: #20293A;
+    border-radius: 10px;
+    padding: 0.5px 10px 10px 20px;
 }
+
+.aside h3 {
+    font-size: 22px;
+}
+
 
 .logo {
     width: 125px;
