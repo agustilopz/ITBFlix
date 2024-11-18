@@ -7,10 +7,6 @@ body {
     margin:0;
 }
 
-
-
-
-
 header{
     background-color: #20293A;
     padding: 10px;
@@ -18,8 +14,7 @@ header{
     justify-content: space-between;
 }
 
-
-a, h3, h1,h2,p,h4 {
+a, h3, h1, h2, p, h4 {
     color: #e6e7ec;
 }
 
@@ -35,23 +30,17 @@ a, h3, h1,h2,p,h4 {
 .menu li {
     flex: auto;
     list-style-type: none;
-    /*border: solid red; */
-
 }
 
 .menu li a{
     box-sizing: border-box;
     border: 2px solid transparent;
     padding: 5px 8px 5px 8px;
-   /* border: solid rgb(0, 134, 251); */
-
 }
 
 a {
     text-decoration: none; /* Elimina el subrayado */
 }
-
-
 
 .menu li a:hover {
     border-radius: 5px; /* Opcional: hace que los bordes sean redondeados */
@@ -66,29 +55,21 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-
 .peliculas-principal, .series-principal {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Distribuye los elementos dinámicamente */
     gap: 10px; /* Espacio entre elementos */
     justify-content: space-around; /* Hace que la primera fila ocupe todo el espacio */
-   /* border: solid red;
 } 
-
-
 
 .miniatura-pelicula, .miniatura-serie {
     width:150px;
     flex: 0 0 1; 
-    /*border: solid red; */
-
 }
 
 img {
     border-radius: 10px;
 }
-
-
 
 .actores {
     display: flex;
@@ -96,23 +77,18 @@ img {
     text-align: center;
 }
 
-
-
 .actor {
     flex: 1;
 }
 
-
-
-/* Secció lo más visto   */
+/* Sección lo más visto   */
 .lo-mas-visto {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
     justify-content:center;
-
-
 }
+
 #lomasvisto {
     padding-top: 5px;
     padding-left:15px;
@@ -124,8 +100,6 @@ img {
     position: relative;
     flex: 0 1 1;
 }
-
-  
 
 /* Estilos para los números */
 .lo-mas-visto article span {
@@ -139,34 +113,15 @@ img {
     padding: 5px 10px;
     border-radius: 5px; /* Bordes redondeados */
     z-index: 2; /* Asegura que el número esté sobre la imagen */
-
 }
 
 
 
 /* Efecto al pasar el cursor por poster más visto */
 .poster-masvisto:hover {
-    transform: scale(1.05); /* Aumenta el tamaño de la imagen un */
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen */
     cursor: pointer; /* Cambia el cursor a "mano" */
 }
-
-
-/*
-.miniatura-serie {
-    flex: 1;
-}
-*/
-
-/*
-.block-2 {
-    display:flex;
-}
-#festivales {
-    background-color: #20293A;
-    width: 30%;
-}
-
-*/
 
 /* Títol de miniatures */
 .thumb-title {
@@ -184,28 +139,22 @@ img {
     margin: 0; /* Opcional, para evitar margen extra */
 }
 
-
 /* Subtítol miniatures pelis*/
 .thumb-subtitle {
     margin-top: 0px;
     margin-bottom: 20px; 
     color:white;
     font-weight: 100;
-
-
 }
 
-
-
-
 /* Efecte hover al passar per sobre els posters*/
-
   .poster-pelicula, .poster-serie {
     width: 150px; /* o el tamaño que desees */
     transition: transform 0.3s ease; /* Transición suave */
   }
+
   .poster-pelicula:hover, .poster-serie:hover {
-    transform: scale(1.06); /* Aumenta el tamaño de la imagen un 10% */
+    transform: scale(1.06); /* Aumenta el tamaño de la imagen */
     cursor: pointer; /* Cambia el cursor a "mano" */
   }
 
@@ -215,9 +164,8 @@ img {
   }
 
   .actor img:hover {
-    transform: scale(1.06); /* Aumenta el tamaño de la imagen un 10% */
+    transform: scale(1.06); /* Aumenta el tamaño de la imagen */
     cursor: pointer; /* Cambia el cursor a "mano" */
-
 
   }
 
@@ -225,7 +173,6 @@ img {
 form {
     color:white;
     padding: 10px;
-   
 }
 
 .alta {
@@ -244,10 +191,9 @@ form {
 
 .form-row {
     flex: 1;
-   
 }
 
-/* General styles for the form container */
+/* Darse de alta */
 .sign-up {
     width: 400px; /* Ajusta el ancho del formulario */
     margin: 100px auto; /* Centra el formulario en la página */
@@ -318,17 +264,6 @@ form {
     background-color: #1aa01a; /* Oscurece el botón al pasar el cursor */
   }
   
-
-
-
-
-
-
-
-
-  
-
-
 /* Disposicio pagina detall pelicula */
 .header-detail {
 display: flex;
@@ -340,32 +275,16 @@ display: flex;
     margin-top: 0;
 }
 
-/* Footer  */
-footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #545f72;
-  margin:0;
-  padding: 10px;
-}
-.rss {
-    padding-top: 10px;
-   
-}
-
-
+/* Página detalle película */
 .movie-details {
-
     padding: 25px;
 }
-
 
 .details {
     padding-left:25px;
     padding-top:0;
     padding-right:20px;
 }
-
 
 .main-movie-details {
     background: #12192B url('src/TheGodfatherBackdropGrade.png') no-repeat center center fixed;
@@ -379,20 +298,29 @@ footer {
 }
 
 /*
-
 .main-header {
     background: #12192B url('src/TheGodfatherBackdrop.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
-
-
 }
 
 .header-detail {
     background: rgba(18, 25, 43, 0.9); 
 }
-
 */
+
+/* Footer  */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #545f72;
+    margin:0;
+    padding: 10px;
+}
+  
+.rss {
+      padding-top: 10px;
+}
 
 .rss img {
     transition: opacity 0.3s ease;
@@ -407,6 +335,7 @@ footer {
     content: url('src/twitter-logo2.png'); /* Cambia la imagen al pasar el cursor */
     cursor: pointer;
 }
+
 .facebook:hover {
     content: url('src/facebook-logo2.png'); /* Cambia la imagen al pasar el cursor */
     cursor: pointer;
@@ -416,6 +345,7 @@ footer {
     content: url('src/instagram-logo2.png'); /* Cambia la imagen al pasar el cursor */
     cursor: pointer;
 }
+
 .youtube:hover {
     content: url('src/youtube-logo2.png'); /* Cambia la imagen al pasar el cursor */
     cursor: pointer;
@@ -458,8 +388,6 @@ footer {
     cursor: pointer;
     transform: scale(1.06); /* Aumenta el tamaño de la imagen un 10% */
     background-color: #353F4F; /* Cambia el clor al hacer hover */
-
-
 }
 
 .movie-section-text a:hover {
@@ -472,9 +400,7 @@ footer {
 
 }
 
-
-
-/* Detall pelicula Cast  */
+/* Detalles pelicula Cast  */
 
 .cast {
     margin-top: 20px;
@@ -537,11 +463,9 @@ nav ul li a {
 
 .actor-image {
     width:120px;
-
 }
 
 /* Poster página detalle */
 .detallposter {
 width:200px;
-
 }
