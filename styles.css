@@ -18,7 +18,7 @@ a, h3, h1, h2, p, h4 {
     color: #e6e7ec;
 }
 
-/* Menú de la dreta */
+/* Menú de la derecha */
 .menu{
     display: flex;
     gap: 25px;
@@ -43,11 +43,11 @@ a {
 }
 
 .menu li a:hover {
-    border-radius: 5px; /* Opcional: hace que los bordes sean redondeados */
-    background-color: #545f72; /* Opcional: un fondo gris claro al pasar el cursor */
+    border-radius: 5px; 
+    background-color: #545f72; 
 }
 
-/* Miniatures pelicules */
+/* Miniaturas películas */
 .peliculas-principal, .series-principal {
 display:flex;
 gap: 5px;
@@ -56,10 +56,10 @@ justify-content: center;
 }
 
 .peliculas-principal, .series-principal {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Distribuye los elementos dinámicamente */
-    gap: 10px; /* Espacio entre elementos */
-    justify-content: space-around; /* Hace que la primera fila ocupe todo el espacio */
+    display: grid; /* Utilizo grid al no conseguir el efecto deseado con flex en este apartado */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px; 
+    justify-content: space-around; 
 } 
 
 .miniatura-pelicula, .miniatura-serie {
@@ -104,15 +104,15 @@ img {
 /* Estilos para los números */
 .lo-mas-visto article span {
     position: absolute;
-    top: 10px; /* Ajusta para cambiar la posición vertical */
-    left: 10px; /* Ajusta para cambiar la posición horizontal */
+    top: 10px; /* Posición vertical */
+    left: 10px; /* Posición horizontal */
     font-size: 25px; /* Tamaño del número */
     font-weight: bold;
     color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para que el número destaque */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente del número */
     padding: 5px 10px;
-    border-radius: 5px; /* Bordes redondeados */
-    z-index: 2; /* Asegura que el número esté sobre la imagen */
+    border-radius: 5px; 
+    z-index: 2; /* Asegura que el número esté sobre la imagen y no detrás */
 }
 
 
@@ -123,7 +123,7 @@ img {
     cursor: pointer; /* Cambia el cursor a "mano" */
 }
 
-/* Títol de miniatures */
+/* Título de miniaturas */
 .thumb-title {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -132,14 +132,14 @@ img {
 }
 
 .miniatura-pelicula h5 {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
+    width: 100%; 
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta el texto que exceda el ancho */
+    overflow: hidden; 
     text-overflow: ellipsis; /* Agrega los puntos suspensivos si el texto es largo */
-    margin: 0; /* Opcional, para evitar margen extra */
+    margin: 0; 
 }
 
-/* Subtítol miniatures pelis*/
+/* Subtítulo miniaturas pelis*/
 .thumb-subtitle {
     margin-top: 0px;
     margin-bottom: 20px; 
@@ -147,9 +147,9 @@ img {
     font-weight: 100;
 }
 
-/* Efecte hover al passar per sobre els posters*/
+/* Efecto hover al pasar por encima los posters*/
   .poster-pelicula, .poster-serie {
-    width: 150px; /* o el tamaño que desees */
+    width: 150px; 
     transition: transform 0.3s ease; /* Transición suave */
   }
 
@@ -181,13 +181,6 @@ form {
     margin-top:20px;
 }
 
-/*
-.sign-up {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
-    */
 
 .form-row {
     flex: 1;
@@ -197,13 +190,12 @@ form {
     display:flex;
 }
 
-/* Darse de alta */
 .sign-up {
     width: 400px; /* Ajusta el ancho del formulario */
     margin: 100px auto; /* Centra el formulario en la página */
     padding: 20px;
-    background-color: #394b59; /* Fondo gris oscuro */
-    border-radius: 8px; /* Bordes redondeados */
+    background-color: #394b59; 
+    border-radius: 8px; 
   }
   
   /* Título del formulario */
@@ -226,17 +218,17 @@ form {
     font-weight: bold;
   }
   
-  /* Estilo de los inputs */
+  /* Estilo de los inputs, seleccionando por "type" */
   .form-row input[type="text"],
   .form-row input[type="email"],
   .form-row input[type="password"],
   .form-row input[type="input"] {
     width: 100%; /* Ocupan todo el ancho disponible */
     padding: 10px;
-    border: none; /* Sin bordes */
-    border-radius: 4px; /* Bordes redondeados */
-    background-color: #e5eff5; /* Fondo gris claro */
-    color: black; /* Texto oscuro */
+    border: none; 
+    border-radius: 4px; 
+    background-color: #e5eff5; 
+    color: black; 
     box-sizing: border-box; /* Asegura que el padding no expanda el input */
   }
   
@@ -254,7 +246,7 @@ form {
   .form-row input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #20293A; /* Color Sign Up */
+    background-color: #20293A; /* Color "Sign Up" */
     border: none;
     color: white;
     font-size: 1em;
@@ -265,10 +257,10 @@ form {
   }
   
   .form-row input[type="submit"]:hover {
-    background-color: #1aa01a; /* Oscurece el botón al pasar el cursor */
+    background-color: #1aa01a; /* Cambia color botón al pasar el cursor */
   }
   
-/* Disposicio pagina detall pelicula */
+/* Disposición página detall película */
 .header-detail {
 display: flex;
 }
@@ -291,29 +283,18 @@ display: flex;
 }
 
 .main-movie-details {
-    background: #12192B url('src/TheGodfatherBackdropGrade.png') no-repeat center center fixed;
+    background: #12192B url('src/TheGodfatherBackdropGrade.png') no-repeat center center fixed; /* Imagen fondo */
     background-size: cover;
     color: #ffffff;
 }
 
 .movie-details {
-    background: rgba(18, 25, 43, 0.9); /* Para oscurecer el fondo */
-
-}
-
-/*
-.main-header {
-    background: #12192B url('src/TheGodfatherBackdrop.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #ffffff;
-}
-
-.header-detail {
     background: rgba(18, 25, 43, 0.9); 
-}
-*/
 
-/* Footer  */
+}
+
+
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -362,36 +343,36 @@ footer {
 
 /* Aplica estilo al contenedor principal */
 .studios-main {
-    display: flex; /* Coloca los artículos en fila */
-    flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
-    gap: 30px; /* Espaciado entre los artículos */
-    justify-content: flex-start; /* Centra el contenido horizontalmente */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: flex-start; 
 }
 
-/* Estilo para cada artículo */
+/* Estilo para cada ítem */
 .studios-main article {
-    width: 270px; /* Ancho fijo para cada rectángulo */
-    height: 145px; /* Altura fija para cada rectángulo */
-    background-color: #1F2937; /* Fondo para los rectángulos */
-    display: flex; /* Hace que el contenido se centre */
+    width: 270px; 
+    height: 145px; 
+    background-color: #1F2937; 
+    display: flex; 
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    border: 1px solid #353F4F; /* Borde opcional */
-    border-radius: 15px; /* Esquinas redondeadas opcionales */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    border: 1px solid #353F4F; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilo para las imágenes */
 .studios-main img {
-    max-width: 60%; /* Escala la imagen para que se ajuste horizontalmente */
-    max-height: 60%; /* Escala la imagen para que se ajuste verticalmente */
+    max-width: 60%; /* La imagen se ajusta horizontalmente */
+    max-height: 60%; /* La imagen se ajusta verticalmente */
     object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
 }
 
 .studios-main article:hover {
     cursor: pointer;
-    transform: scale(1.06); /* Aumenta el tamaño de la imagen un 10% */
-    background-color: #353F4F; /* Cambia el clor al hacer hover */
+    transform: scale(1.06); /* Aumenta el tamaño de la imagen */
+    background-color: #353F4F; /* Cambia el color de fondo al hacer hover */
 }
 
 .movie-section-text a:hover {
@@ -404,7 +385,7 @@ footer {
 
 }
 
-/* Detalles pelicula Cast  */
+/* Detalles película Cast  */
 
 .cast {
     margin-top: 20px;
@@ -425,9 +406,9 @@ footer {
 }
 
 .cast-member img {
-    width: 80px; /* Ancho del contenedor */
-    height: 80px; /* Alto del contenedor */
-    border-radius: 50%; /* Convierte el contenedor en un círculo */
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; /* Convierte el contenedor en un círculo (de imagen cuadrada a imagen circular) */
     object-fit: cover; /* Ajusta la imagen dentro del círculo sin deformarla */
 }
 
